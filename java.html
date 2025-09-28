@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bhanu Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="Assets/logos/studying.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Assets/logos/bhanu's logo.png" alt="logo" >
+                <div class="hamburger">☰</div>
+            </div>
+
+            <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="java.html">java</a></li>
+                <li><a href="OB.html">OB</a></li>
+                <li><a href="CBNST.html">CBNST</a></li>
+                <li><a href="CN.html">CN</a></li>
+                <li><a href="SE.html">SE</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="syllabus">
+            <div class="unit">
+                <h1>unit 1</h1>
+
+                <p>Introduction: Introducing Object Oriented Approach Relating together paradigms {Functional, Data decomposition}, Basic terms and ideas i.e Abstraction, Encapsulation, Inheritance, Polymorphism, Difference between C++ and Java, Operators.</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 2</h1>
+
+                <p>Introduction: Introducing Object Oriented Approach Relating together paradigms {Functional, Data decomposition}, Basic terms and ideas i.e Abstraction, Encapsulation, Inheritance, Polymorphism, Difference between C++ and Java, Operators.</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 3</h1>
+
+                <p>Inheritance and polymorphism: Inheritance, Class hierarchy, Derivation– public, private & protected, Aggregation, Composition Vs. Classification, Hierarchies, Polymorphism, Categorization of polymorphism techniques, Method polymorphism, Polymorphism by parameter, Operator overloading, Parametric Polymorphism</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 4</h1>
+
+                <p>Generic function: Template function, Function name overloading, overriding Inheritance methods, Runtime polymorphism, Multiple Inheritance.</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 5</h1>
+
+                <p>Files and exception handling: Streams and files, Namespaces, Exception handling, Generic Classes..</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class=".foot">
+        <a href="https://www.whatsapp.com/">
+            <img src="Assets/logos/whatsapp.png" alt="whatsapp">
+        </a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

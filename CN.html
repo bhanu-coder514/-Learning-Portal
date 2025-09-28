@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bhanu Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="Assets/logos/studying.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Assets/logos/bhanu's logo.png" alt="logo">
+                <div class="hamburger">☰</div>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="java.html">java</a></li>
+                    <li><a href="OB.html">OB</a></li>
+                    <li><a href="CBNST.html">CBNST</a></li>
+                    <li><a href="CN.html">CN</a></li>
+                    <li><a href="SE.html">SE</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="syllabus">
+            <div class="unit">
+                <h1>unit 1</h1>
+
+                <p>Introduction: Introduction to data communication, Basic concepts, LAN-WAN-MAN, Line configuration,
+                    Topology, Transmission modes, Categories of Network, Networks for companies, Networks for people,
+                    OSI-ISO and TCP/IP model with its layer functionalities, Digital Transmission.</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 2</h1>
+
+                <p>Physical Layer: Data signals, Noise less channel-Nyquist Bit Rate, Noisy Channel-Shannon Capacity,
+                    Various Network topologies-Linear Bus Topology, Ring Topology, Star Topology, Hierarchical or Tree
+                    Topology, Topology Comparison, Switching Techniques and its comparison, Relationship between Packet
+                    Size and Transmission time, Multiplexing, FDM, TDM, WDM, Transmission media.</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 3</h1>
+
+                <p>Data link Layer: Introduction to data link layer, Design issues of DLL, Framing, Error control, Flow
+                    control, Link Management, ARQ strategies-Error Detection and correction, Parity bits, Importance of
+                    framing distance for error correction, Single bit error correction, Error Detection or Cyclic
+                    Redundant Code (CRC), HDLC.</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 4</h1>
+
+                <p>Network and Transport layer: Design issues of Network layer, Nature of the service provided, Routing,
+                    Congestion control, Internetworking-Principles and Types of routing algorithms, Classes of routing
+                    algorithms, Optimality principle, Flooding, Congestion and congestion control, Closed loop solution:
+                    IP protocol (IPV4), IPv6.
+
+                    Introduction to Transport layer: Services of Transport layer, Connection establishment: Connection
+                    Release: Transport Protocols; TCP and UDP protocol</p>
+            </div>
+
+            <div class="unit">
+                <h1>unit 5</h1>
+
+                <p>Application Layer: DNS, Electronic mail, HTTP, SNMP, WWW, FTP, IPsec, Firewall, Trusted Systems.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="foot">
+        <a href="https://www.whatsapp.com/">
+            <img src="Assets/logos/whatsapp.png" alt="whatsapp">
+        </a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bhanu Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assets/logos/studying.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Assets/logos/bhanu's logo.png" alt="logo" >
+                <div class="hamburger">☰</div>
+            </div>
+
+            <div class="nav-links classList">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="java.html">java</a></li>
+                <li><a href="OB.html">OB</a></li>
+                <li><a href="CBNST.html">CBNST</a></li>
+                <li><a href="CN.html">CN</a></li>
+                <li><a href="SE.html">SE</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="text-content">
+            <p>SALLABUS IS THE KEY TO </p>
+
+            <h1>SUECCESS!</h1>
+        </div>
+
+        <div class="contacts">
+            <a href="https://www.instagram.com/pandit_abhay001/" target="_blank"><img class="icon insta" src="Assets/logos/Instagram.png" alt="insta"></a>
+            <a href="https://www.reddit.com/" target="_blank"><img class="icon Reddit" src="Assets/logos/Reddit.png" alt="Reddit"></a>
+            <a href="https://www.snapchat.com/" target="_blank"><img class="icon Snapchat" src="Assets/logos/Snapchat.png" alt="Snapchat"></a>
+            <a href="https://www.youtube.com/@bhanubhardwaj425" target="_blank"><img class="icon YouTube" src="Assets/logos/YouTube.png" alt="YouTube"></a>
+        </div>
+    </main>
+
+
+    <footer>
+        <a href="https://www.whatsapp.com/">
+            <img src="Assets/logos/whatsapp.png" alt="whatsapp">
+        </a>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Assets/images/laptop.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav {
+    background-color: #000000c1;
+}
+
+.logo img {
+    height: 88px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .nav-links ul{
+    width: 466px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 31px;
+    gap: 40px;
+} */
+
+.nav-links ul {
+    width: 466px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+    gap: 48px;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.nav-links ul li a:hover {
+    color: yellow;
+}
+
+.nav-links ul li {
+    text-decoration: none;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+main {
+    margin-top: 190px;
+}
+
+
+main .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 25px;
+}
+
+main .text-content p {
+    /* font-family: 'Montserrat', 'Consolas', 'monospace', Arial, sans-serif; */
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 10px;
+    z-index: 10;
+    font-size: 22px;
+
+}
+
+
+main .text-content h1 {
+    font-family: serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 82px;
+    margin-top: 44px;
+    margin-right: 73px;
+}
+
+.contacts img.icon {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    margin-left: 0;
+    margin-top: 0;
+    display: block;
+}
+
+footer {
+    height: 60px;
+    margin-top: 30%;
+}
+
+footer a img {
+    height: 62px;
+    filter: brightness(0) invert(1);
+    margin-left: 95%;
+}
+
+/* .hamburger {
+    display: none;
+} */
+
+
+@media (max-width: 768px) {
+    main .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 82px;
+        margin-top: 44px;
+        margin-right: -4px;
+    }
+
+    main .text-content p {
+        /* font-family: 'Montserrat', 'Consolas', 'monospace', Arial, sans-serif; */
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 10px;
+        z-index: 10;
+        font-size: 22px;
+        margin-left: 10%;
+    }
+
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: aliceblue;
+        position: absolute;
+        top: 23px;
+        right: 34px;
+    }
+
+    .nav-links ul {
+        display: none;
+    }
+
+    footer a img {
+        height: 62px;
+        filter: brightness(0) invert(1);
+        margin-left: 44%;
+    }
+
+    .nav-links.active ul {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        background: #2228;
+        /* optional */
+        position: absolute;
+        /* optional: to overlay */
+        top: 95px;
+        /* navbar height ke niche dikhana ho to */
+        right: 0;
+        left: 0;
+        padding: 20px 0;
+        z-index: 200;
+        align-items: center;
+    }
+}

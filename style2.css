@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+main{
+    margin-top: 10px;
+}
+
+.syllabus{
+    display: flex;
+    flex-direction: column;
+    margin: 117px;
+    width: 50vw;
+    margin-left: 24%;
+    gap: 27px;
+}
+
+.unit{
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    gap: 17px;
+}
+
+.unit h1{
+    /* font-family: Lucida Sans; */
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.unit p{
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.foot{
+    margin-top: -5%;
+}
